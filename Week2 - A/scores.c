@@ -1,12 +1,15 @@
 #include <stdio.h>
 
-int main() {
+int main() 
+{
     int n;
-    scanf("n: %d", &n);
+    printf("n: ");
+    scanf("%d", &n);
     float scores[n];
     float sum = 0;
 
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) 
+    {
         printf("Enter score %d: ", i + 1);
         scanf("%f", &scores[i]);
         sum += scores[i];
